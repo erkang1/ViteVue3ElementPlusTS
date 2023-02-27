@@ -1,0 +1,91 @@
+body{
+    margin: 0 !important;
+}
+
+//响应式样式
+@media screen and (max-width: 1440px) {
+    .loginbgicon {
+        height: 0 !important;
+    }
+
+    .signin-signup {
+        left: 50% !important;
+    }
+}
+
+// 注册登陆样式
+.loginForm {
+    position: relative;
+    top: 10px;
+}
+
+.titletext {
+    width: 100%;
+    text-align: center;
+    color: #409EFF;
+    font-size: 24px;
+    margin: -20px 0 20px 0;
+}
+
+.submit-btn {
+    width: 100%
+}
+
+.register-btn {
+    text-align: center;
+    font-size: 0.5rem;
+    color: cornflowerblue;
+    text-decoration: none;
+    position: relative;
+    left: 45%;
+
+}
+
+
+.container {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 !important;
+    // background-color: #fff;
+    background: url("../assets/images/bg.png") no-repeat;
+    overflow: hidden;
+
+    .forms-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+
+        .loginbgicon {
+            height: 680px;
+            width: 680px;
+            background: url("../assets/images/phone-web-icon-all.png") no-repeat;
+            background-size: 100%;
+            position: absolute;
+            top: 16%;
+            left: 10%;
+        }
+
+        .signin-signup {
+            position: absolute;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            left: 85%;
+            width: 44%;
+            // transition: 1s 0.7s ease-in-out;
+            display: grid;
+            grid-template-columns: 1fr;
+            z-index: 5;
+
+            .signbox {
+                width: 400px;
+                padding: 40px;
+                border-radius: 5px;
+                box-shadow: 0 0 50px #f9f4f4;
+                background-color: #fff;
+            }
+        }
+    }
+}
