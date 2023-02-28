@@ -24,7 +24,7 @@
             <!--   -->
             <el-button type="primary" @click="handleRregister('registerForm')" class="submit-btn">注册</el-button>
         </el-form-item>
-        <RouterLink to='/' class="register-btn" >去登陆</RouterLink>
+        <RouterLink to='/ViteVue3ElementPlusTS/' class="register-btn" >去登陆</RouterLink>
     </el-form>
 </template>
 
@@ -43,19 +43,18 @@ const props = defineProps({
 })
 
 // @ts-ignore
-const { ctx } = getCurrentInstance()
+let { proxy } = getCurrentInstance();
 
 const handleRregister = (formName: String): void => {
-    ctx.$refs[formName].validate((valid: boolean) => {
+    proxy.$refs[formName].validate((valid: boolean) => {
         if (valid) {
             alert('submit!')
         } else {
-            console.log('error submit!')
-            return false
+            console.log("error submit!!!");
+            return false;
         }
-    })
+    });
 }
-
 </script>
 
 <style scoped lang="less">

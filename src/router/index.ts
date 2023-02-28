@@ -2,22 +2,22 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
+    path: '/ViteVue3ElementPlusTS/',
     name: 'Login',
-    component: () => import('../views/Login/Login.vue')
+    component: () => import('../views/login/login.vue')
   },
   {
-    path: '/Register',
+    path: '/ViteVue3ElementPlusTS/register',
     name: 'Register',
-    component: () => import('../views/Register/Register.vue')
+    component: () => import('../views/register/register.vue')
   },
   {
-    path: '/Home', 
+    path: '/ViteVue3ElementPlusTS/home', 
     name: 'Home',
-    component: () => import('../views/Home/Home.vue')
+    component: () => import('../views/home/home.vue')
   },
   {
-    path: '/:catchAll(.*)', //正则 所有界面
+    path: '/ViteVue3ElementPlusTS/:catchAll(.*)', //正则 所有界面
     name: '404Page',
     component: () => import('../views/404/404Page.vue')
   },

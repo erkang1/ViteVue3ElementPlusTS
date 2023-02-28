@@ -11,12 +11,12 @@
         <el-form-item>
             <el-button type="primary" @click="handleLogin('loginForm')" class="submit-btn">登陆</el-button>
         </el-form-item>
-        <RouterLink to='Register' class="register-btn" >立即注册</RouterLink>
+        <RouterLink to='/ViteVue3ElementPlusTS/Register' class="register-btn">立即注册</RouterLink>
     </el-form>
 </template>
 
 <script lang="ts" setup>
-import { ref, getCurrentInstance } from 'vue'
+import { ref, inject,getCurrentInstance } from 'vue'
 //  setup 中使用 defineProps 来获取父组件传递的值
 const props = defineProps({
     loginUser: {
@@ -30,18 +30,20 @@ const props = defineProps({
 })
 
 // @ts-ignore
-const { ctx } = getCurrentInstance()
+// const { ctx } = getCurrentInstance()
+let { proxy } = getCurrentInstance();
 
 const handleLogin = (formName: String): void => {
-    ctx.$refs[formName].validate((valid: boolean) => {
+    proxy.$refs[formName].validate((valid: boolean) => {
         if (valid) {
             alert('submit!')
         } else {
-            console.log('error submit!')
-            return false
+            console.log("error submit!!");
+            return false;
         }
-    })
+    });
 }
+
 </script>
 
 <style lang="less" scoped>
