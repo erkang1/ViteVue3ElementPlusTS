@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-import { registerUser, registerRules } from "../../utils/registerValidators"  // 导入注册验证 ts
+import { registerUser, registerRules } from "@/utils/registerValidators"  // 导入注册验证 ts
 import RegisterForm from "@/components/RegisterForm.vue"; // 导入注册组件
 </script>
 

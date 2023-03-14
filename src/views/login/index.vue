@@ -13,8 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-
-import { loginUser, rules } from "../../utils/loginValidators"  // 导入登录验证 ts
+import { loginUser, rules } from "@/utils/loginValidators"  // 导入登录验证 ts
 import LoginForm from "@/components/LoginForm.vue"; // 导入登陆组件
 </script>
 
