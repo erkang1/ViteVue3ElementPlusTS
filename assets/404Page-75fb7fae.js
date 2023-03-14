@@ -1,1 +1,0 @@
-import{_ as e,o as n,i as s}from"./index-ca935df4.js";const a={class:"404-page"};const o=e({name:"404Page",components:{}},[["render",function(e,o,t,r,c,i){return n(),s("div",a,"没有找到页面")}]]);export{o as default};
