@@ -1,0 +1,1 @@
+import{_ as e,o as n,j as s}from"./index-ad6e0a2a.js";const a={class:"404-page"};const o=e({name:"404Page",components:{}},[["render",function(e,o,t,r,c,d){return n(),s("div",a,"没有找到页面")}]]);export{o as default};
